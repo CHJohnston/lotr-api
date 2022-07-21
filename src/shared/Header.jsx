@@ -3,8 +3,8 @@ import { routes } from "../utils/routes";
 
 export const Header = () => {
   return (
-    <header className="container-fluid bg-secondary p-2">
-      <nav className="navbar navbar-expand-lg">
+    <header className="container-fluid  p-2">
+      <nav className="navbar navbar-expand-lg bg-color">
         <ul className="navbar-nav">
           {routes.map((route, idx) => {
             if (route.isNavLink)

@@ -1,14 +1,56 @@
 @import url(../node_modules/bootstrap/dist/css/bootstrap.css);
+
+@font-face {
+  font-family: "CormorantInfant";
+  src: local("CormorantInfant"),
+    url("../src/assets/fonts/CormorantInfant-SemiBold.ttf") format("truetype");
+  font-weight: Semi-Bold;
+}
+@font-face {
+  font-family: "RingbearerMedium";
+  src: local("RingbearerMedium"),
+    url("../src/assets/fonts/RingbearerMedium-51mgZ.ttf") format("truetype");
+  font-weight: Medium;
+}
+a{
+  color :#6a0f01;
+}
+.bg-color {
+  background-color: #ffce0858;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: CormorantInfant, serif;
+  font-size: 150%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /*background-color: (#ffce08c3) ;*/
+  height: 220%;
+  background-image: linear-gradient(#ffce08, #6a0f01);
+  background-image: cover;
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.header-font {
+  font-family: RingbearerMedium, serif;
+}
+
+.hero {
+  text-align: center;
+  font-size: 300%;
+  padding-top: 20%;  
+}
+
+.full-page-view {
+  padding-top: 10%;
+  height: 100vh;
+}
+
+footer {
+  background-color: #6a0f01;    
+}
+

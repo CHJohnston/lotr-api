@@ -7,26 +7,37 @@ export const CharacterDetails = (props) => {
   const { _id } = useParams();
   const [isLoading, character] = useItem("character", _id);
 
-  if (isLoading) return <h2>Loading ...</h2>;
+  if (isLoading) return;
+  <h3 className="hero">Loading...</h3>;
   return (
-    <main>
-      <div className="container">
+    <main className="full-page-view">
+      <div className="container-fluid">
         <div className="row justify-content-center">
           <div className="col-8">
             <h2>{character.name}</h2>
-            <ul className="list-group">
-              <li className="list-group-item">Height: {character.height}</li>
-              <li className="list-group-item">Race: {character.race} </li>
-              <li className="list-group-item">Gender: {character.gender} </li>
-              <li className="list-group-item">Realm: {character.realm}</li>
-              <li className="list-group-item">
+            <ul className="list-group bg-color">
+              <li className="list-group-item bg-color">
+                Height: {character.height}
+              </li>
+              <li className="list-group-item bg-color">
+                Race: {character.race}{" "}
+              </li>
+              <li className="list-group-item bg-color">
+                Gender: {character.gender}{" "}
+              </li>
+              <li className="list-group-item bg-color">
+                Realm: {character.realm}
+              </li>
+              <li className="list-group-item bg-color">
                 <a href={character.wikiUrl} target="_blank" rel="noreferrer">
                   {" "}
                   {character.wikiUrl}
                 </a>
               </li>
             </ul>
-            <button onClick={() => navigate(-1)}>Back To Search</button>
+            <div>
+              <button onClick={() => navigate(-1)}>Back To Search</button>
+            </div>
           </div>
         </div>
       </div>

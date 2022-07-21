@@ -11,10 +11,11 @@ export const CharacterSearch = (props) => {
     name.toLowerCase().includes(searchName.toLowerCase())
   );
 
-  if (isLoading) return <h2>Loading ...</h2>;
+  if (isLoading) return;
+  <h3 className="hero">Loading...</h3>;
   return (
-    <main>
-      <h1>LOTR Character List {characterList.length}</h1>
+    <main className="full-page-view">
+      <h1>Character List {characterList.length}</h1>
       <label htmlFor="searchName">Search by Name: </label>
       <input
         type="text"
@@ -22,16 +23,18 @@ export const CharacterSearch = (props) => {
         value={searchName}
         onChange={(e) => setSearchName(e.target.value)}
       />
-      <div className="row p-4">
-        {characterSearchList.map(({ _id, name, race }) => (
-          <div key={_id} className="card col-sm-4">
-            <div className="card-body">
-              <h3>Name: {name}</h3>
-              <h4>_id: {_id}</h4>
-              <Link to={`${_id}`}> View More </Link>
+      <div className="container-fluid">
+        <div className="row p-4">
+          {characterSearchList.map(({ _id, name, race }) => (
+            <div key={_id} className="card col-sm-4 bg-color">
+              <div className="card-body bg-color">
+                <h3>Name: {name}</h3>
+                <h4>_id: {_id}</h4>
+                <Link to={`${_id}`}> View More </Link>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </main>
   );

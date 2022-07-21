@@ -1,8 +1,8 @@
 export const Footer = () => {
   return (
-    <footer className="bg-light text-center text-lg-start">
+    <footer>
       <div className="text-center p-3">
-        <small>© 2022 Copyright by Designed Responsive</small>
+        <small>Forged in the Fires of Mordor</small>
       </div>
     </footer>
   );
