@@ -8,6 +8,7 @@ export const useItem = (apiList, id) => {
 
   useEffect(() => {
     console.log(`API Fetch List ${apiList}`);
+    if (id)
     fetch(`https://the-one-api.dev/v2/${apiList}/${id}`, {
       headers: {
         Accept: "application/json",

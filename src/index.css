@@ -12,24 +12,40 @@
     url("../src/assets/fonts/RingbearerMedium-51mgZ.ttf") format("truetype");
   font-weight: Medium;
 }
-a{
-  color :#6a0f01;
+a {
+  color: #6a0f01;
 }
 .bg-color {
-  background-color: #ffce0858;
+  background-color: #f4b700;
 }
+
 body {
   margin: 0;
   font-family: CormorantInfant, serif;
   font-size: 150%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /*background-color: (#ffce08c3) ;*/
-  height: 220%;
+  height: 100vh;
+  overflow-y: scroll;
   background-image: linear-gradient(#ffce08, #6a0f01);
-  background-image: cover;
+  background-attachment: fixed;
 }
 
+.search-box {
+  background-color: #f4b700;
+  padding: 1rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.125);
+  border-radius: .25rem;
+}
+#searchName {
+ padding :.5rem;
+ border: 0.1rem solid rgba(0, 0, 0, 0.125);
+ border-radius: .25rem;
+}
+
+.search-label {
+  padding :.5rem;  
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -41,16 +57,15 @@ code {
 
 .hero {
   text-align: center;
-  font-size: 300%;
-  padding-top: 20%;  
+  font-size: 400%;
+  padding-top: 20%;
 }
 
 .full-page-view {
-  padding-top: 10%;
-  height: 100vh;
+  padding-top: 5%;
+  height: 100%;
 }
 
 footer {
-  background-color: #6a0f01;    
+  background-color: #6a0f01;
 }
-

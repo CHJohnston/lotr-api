@@ -1,4 +1,4 @@
-import { HomeView } from "../views/HomeViewOld";
+import { HomeView } from "../views/HomeView";
 import { CharacterSearch } from "../views/CharacterSearch";
 import { CharacterDetails } from "../views/CharacterDetails";
 

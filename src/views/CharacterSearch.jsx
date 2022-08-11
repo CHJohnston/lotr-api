@@ -11,22 +11,25 @@ export const CharacterSearch = (props) => {
     name.toLowerCase().includes(searchName.toLowerCase())
   );
 
-  if (isLoading) return;
-  <h3 className="hero">Loading...</h3>;
+  if (isLoading) return <h3 className="full-page-view hero">Loading...</h3>;
   return (
-    <main className="full-page-view">
-      <h1>Character List {characterList.length}</h1>
-      <label htmlFor="searchName">Search by Name: </label>
-      <input
-        type="text"
-        id="searchName"
-        value={searchName}
-        onChange={(e) => setSearchName(e.target.value)}
-      />
+    <main className="full-page-view container-fluid">
+      <div className="sticky-top search-box">
+        <h1>Character List</h1>
+        <div>
+        <label className="search-label" htmlFor="searchName">Search by Name: </label>
+        <input
+          type="text"
+          id="searchName"
+          value={searchName}
+          onChange={(e) => setSearchName(e.target.value)}
+        />
+        </div>
+      </div>
       <div className="container-fluid">
         <div className="row p-4">
-          {characterSearchList.map(({ _id, name, race }) => (
-            <div key={_id} className="card col-sm-4 bg-color">
+          {characterSearchList.map(({ _id, name}) => (
+            <div key={_id} className="card col-lg-4 bg-color">
               <div className="card-body bg-color">
                 <h3>Name: {name}</h3>
                 <h4>_id: {_id}</h4>
