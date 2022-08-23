@@ -3,8 +3,8 @@ import { routes } from "../utils/routes";
 
 export const Header = () => {
   return (
-    <header>
-      <nav className="navbar sticky-top navbar-expand-lg navbar-light">
+    <header className="fixed-top bg-color">
+      <nav className="navbar navbar-expand-lg navbar-light">
         <div className="container-fluid">
           <h1 className="navbar-brand header-font">Lord of the Rings API</h1>
           <button

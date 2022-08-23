@@ -33,18 +33,19 @@ body {
 
 .search-box {
   background-color: #f4b700;
-  padding: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
   border: 0.1rem solid rgba(0, 0, 0, 0.125);
-  border-radius: .25rem;
+  border-radius: 0.25rem;
 }
 #searchName {
- padding :.5rem;
- border: 0.1rem solid rgba(0, 0, 0, 0.125);
- border-radius: .25rem;
+  padding: 0.5rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
 }
 
 .search-label {
-  padding :.5rem;  
+  padding: 0.5rem;
 }
 
 code {
@@ -62,10 +63,14 @@ code {
 }
 
 .full-page-view {
-  padding-top: 5%;
+  padding-top: 10%;
   height: 100%;
 }
 
-footer {
+a:hover {
+  color: whitesmoke;
+}
+
+.footer-bk {
   background-color: #6a0f01;
 }

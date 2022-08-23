@@ -15,24 +15,24 @@ export const CharacterSearch = (props) => {
   return (
     <main className="full-page-view container-fluid">
       <div className="sticky-top search-box">
-        <h1>Character List</h1>
-        <div>
-        <label className="search-label" htmlFor="searchName">Search by Name: </label>
+        <h1>Character Search</h1>
+        <label className="search-label" htmlFor="searchName">
+          Search by Name:{" "}
+        </label>
         <input
           type="text"
           id="searchName"
           value={searchName}
           onChange={(e) => setSearchName(e.target.value)}
         />
-        </div>
       </div>
       <div className="container-fluid">
         <div className="row p-4">
-          {characterSearchList.map(({ _id, name}) => (
+          {characterSearchList.map(({ _id, name }) => (
             <div key={_id} className="card col-lg-4 bg-color">
               <div className="card-body bg-color">
                 <h3>Name: {name}</h3>
-                <h4>_id: {_id}</h4>
+                
                 <Link to={`${_id}`}> View More </Link>
               </div>
             </div>
